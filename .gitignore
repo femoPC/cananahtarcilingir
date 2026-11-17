@@ -1,0 +1,16 @@
+# Kurulum ve yerel test dosyaları
+node_modules/
+.wrangler/
+.dev.vars*
+.env*
+
+# GitHub'a gitmeyecek fotoğraflar (müşterilerin yüklediği / yükleyeni belirsiz)
+musteri-fotograflari/
+yukleyeni-belirsiz/
+
+# Bilgisayara özel ayarlar
+.claude/
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini

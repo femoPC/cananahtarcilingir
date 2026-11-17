@@ -1,0 +1,11 @@
+{
+  "name": "cananahtarcilingir",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev --port 8787 --persist-to C:/Users/efeme/AppData/Local/Temp/cananahtar-wrangler",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "4.164.0"
+  }
+}

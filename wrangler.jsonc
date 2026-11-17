@@ -1,0 +1,21 @@
+{
+  // Canlı site: cananahtarcilingir.com (Cloudflare Worker "bold-wave-be09")
+  "name": "bold-wave-be09",
+  "account_id": "c2a01cc72a2840fb4befe1afe6625743",
+  "main": "src/index.js",
+  "compatibility_date": "2026-11-01",
+  "assets": { "directory": "./public", "binding": "ASSETS" },
+  "durable_objects": {
+    "bindings": [{ "name": "SAYAC", "class_name": "Sayac" }]
+  },
+  "exports": {
+    "Sayac": { "type": "durable-object", "storage": "sqlite" }
+  },
+  "routes": [
+    { "pattern": "cananahtarcilingir.com", "custom_domain": true },
+    { "pattern": "www.cananahtarcilingir.com", "custom_domain": true }
+  ],
+  // Geçici *.workers.dev adresi kapalı
+  "workers_dev": false,
+  "preview_urls": false
+}
